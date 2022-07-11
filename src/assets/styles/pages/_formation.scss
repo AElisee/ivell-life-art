@@ -1,0 +1,138 @@
+.formation {
+  @include pageDisplay;
+
+  .formation-container {
+    max-width: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin: 0 auto;
+
+    @media screen and(max-width: 870px) {
+      width: 97%;
+    }
+
+    .devise {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      >div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        @media screen and(max-width: 850px) {
+          gap: 8px;
+        }
+
+        h2 {
+          text-transform: uppercase;
+          font-weight: 200;
+          font-family: $font2;
+          font-size: 1.5rem;
+          transform: translateY(5px);
+
+          @media screen and(max-width: 850px) {
+            font-size: 1.3rem;
+          }
+        }
+
+        select {
+          padding: 4px 6px;
+          height: 35px;
+          font-size: 1rem;
+          text-align: center;
+          background: none;
+
+          appearance: none;
+          background-image: url(../../icons/caret.png);
+          background-repeat: no-repeat;
+          background-position: right 0.7rem center;
+          background-size: 0.8rem;
+
+          @media screen and(max-width: 850px) {
+            padding: 3px 4px;
+            height: 30px;
+            font-size: 0.9rem;
+          }
+
+          option {
+            background: rgba(248, 247, 247, 0.931);
+            text-align: left;
+          }
+
+        }
+      }
+    }
+
+    .content {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 auto;
+
+      .card {
+        height: 100%;
+        width: 250px;
+        display: grid;
+        grid-template-rows: 70% 30%;
+        margin: 0 auto;
+        border: 1px solid rgba(128, 128, 128, 0.37);
+
+        @media screen and(max-width: 870px) {
+          width: 200px;
+        }
+
+        @media screen and(max-width: 630px) {
+          width: 90%;
+        }
+
+        .f-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          font-size: 1.1rem;
+          text-align: center;
+          width: 80%;
+          margin: 0 auto;
+
+          @media screen and(max-width: 630px) {
+            font-size: 0.9rem;
+            width: 100%;
+            padding: 5px;
+          }
+
+          .decoration {
+            text-decoration: underline;
+          }
+
+
+        }
+      }
+
+      .formation-1 {
+        .img {
+          background: url(../../img/formation-1.jpg) center/cover;
+        }
+      }
+
+      .formation-2 {
+        .img {
+          background: url(../../img/formation-2.jpg) center/cover;
+        }
+      }
+
+      .formation-3 {
+        .img {
+          background: url(../../img/formation-3.jpg) center/cover;
+        }
+      }
+    }
+  }
+}

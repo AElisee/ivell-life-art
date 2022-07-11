@@ -1,9 +1,14 @@
 import React from "react";
+import Caroussel from "../../components/Caroussel";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 const Galery1 = () => {
   return (
-    <div>
-      <h1>Beauté</h1>
+    <div className="galery">
+      <Header />
+      <Caroussel />
+      <Footer />
     </div>
   );
 };

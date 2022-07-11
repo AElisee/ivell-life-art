@@ -6,13 +6,19 @@ const Footer = () => {
     <footer>
       <ul>
         <li>
-          <NavLink href="#">
-            <i class="fa-brands fa-instagram-square"></i>
+          <NavLink to="/">
+            <img
+              src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
+              alt="intagram-icon"
+            />
           </NavLink>
         </li>
         <li>
-          <NavLink href="#">
-            <i class="fa-brands fa-facebook-square"></i>
+          <NavLink to="/">
+            <img
+              src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+              alt="facebook-icon"
+            />
           </NavLink>
         </li>
       </ul>

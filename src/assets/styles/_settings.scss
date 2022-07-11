@@ -17,13 +17,23 @@ $red : #FC0000;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: white;
 }
 
 body {
   font-family: anekKannada, sans-serif;
   height: 100vh;
   overflow: hidden;
+}
+
+@mixin pageDisplay {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+
+  @media screen and(max-width: 768px) {
+    grid-template-rows: 28% 1fr 18%;
+  }
 }
 
 li {

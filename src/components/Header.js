@@ -7,13 +7,15 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <h1>
-            <NavLink to="/">IVELL LIVE START</NavLink>
+            <NavLink to="/accueil">IVELL LIVE ART</NavLink>
           </h1>
           <p>des images bios, faites par de vrais artitistes</p>
         </div>
         <nav>
           <ul>
-            <li>recent</li>
+            <NavLink to="/accueil">
+              <li>recent</li>
+            </NavLink>
             <li>
               galerie
               <ul id="sub-menu">
@@ -35,18 +37,9 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              Formation
-              <ul id="sub-menu">
-                <li>
-                  <NavLink to="/photographie">Photographie</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/retouche-pro">Retouche Pro</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/packs-setup">Packs Setup</NavLink>
-                </li>
-              </ul>
+              <NavLink to="/formation" id="formation">
+                Formation
+              </NavLink>
             </li>
           </ul>
         </nav>

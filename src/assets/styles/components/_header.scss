@@ -75,6 +75,7 @@ header {
           // border-bottom: 2px solid white;
           transition: 0.2s ease-in-out;
 
+
           &:hover ul {
             visibility: visible;
             opacity: 1;
@@ -85,6 +86,7 @@ header {
           }
 
           ul {
+            text-align: left;
             position: absolute;
             top: calc(100% + -10px);
             left: 50%;
@@ -95,11 +97,12 @@ header {
             background: rgba(248, 247, 247, 0.931);
 
             li {
+              width: 120px;
+
               a {
-                width: 120px;
                 display: block;
                 padding-top: 5px;
-                text-align: center;
+                text-align: left;
                 font-size: 1rem;
                 font-weight: 400;
                 text-transform: capitalize;

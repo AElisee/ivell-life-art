@@ -1,13 +1,13 @@
 import React from "react";
-import Caroussel from "../../components/Caroussel";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import ModeSlide from "../../components/ModeSlide";
 
 const Galery2 = () => {
   return (
     <div className="galery">
       <Header />
-      <Caroussel />
+      <ModeSlide />
       <Footer />
     </div>
   );

@@ -1,8 +1,165 @@
-.carousel {
+.slide-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+
+  .carousel-root {
+
+    .carousel-grid {
+      @include slideGrid;
+      grid-template-columns: 20% 15% 25% 20% 20%;
+
+      @media screen and(max-width: 768px) {
+        grid-template-columns: 33% 33% 34%;
+      }
+
+
+      .hover {
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.2s ease-in-out;
+          box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.698);
+        }
+      }
+    }
+
+    .slide-1 {
+      height: 400;
+
+      .hsi-1 {
+        height: 400px;
+        background: url(../../img/recent01.png) top/cover;
+      }
+
+      .mod-i-1 {
+        height: 400px;
+        background: url(../../img/recent01.png) top/cover;
+      }
+
+      .hsi-2 {
+        height: 100%;
+        background: url(../../img/recent02.png) center/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .mod-i-2 {
+        height: 100%;
+        background: url(../../img/recent02.png) center/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .hsi-3 {
+        height: 100%;
+        background: url(../../img/recent03.png) top/cover;
+      }
+
+      .mod-i-3 {
+        height: 100%;
+        background: url(../../img/recent03.png) top/cover;
+      }
+
+      .hsi-4 {
+        height: 100%;
+        background: url(../../img/recent04.png) top/cover;
+      }
+
+      .mod-i-4 {
+        height: 100%;
+        background: url(../../img/recent04.png) top/cover;
+      }
+
+      .hsi-5 {
+        height: 100%;
+        background: url(../../img/recent1.png) top/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .mod-i-5 {
+        height: 100%;
+        background: url(../../img/recent1.png) top/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .slide-2 {
+      .hsi-1 {
+        height: 100%;
+        background: url(../../img/galery-b-1.png) top/cover;
+      }
+
+      .mod-i-1 {
+        height: 100%;
+        background: url(../../img/galery-b-1.png) top/cover;
+      }
+
+
+      .hsi-2 {
+        height: 100%;
+        background: url(../../img/recent03.png) center/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .mod-i-2 {
+        height: 100%;
+        background: url(../../img/recent03.png) center/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .hsi-3 {
+        height: 100%;
+        background: url(../../img/recent04.png) top/cover;
+      }
+
+      .mod-i-3 {
+        height: 100%;
+        background: url(../../img/recent04.png) top/cover;
+      }
+
+      .hsi-4 {
+        height: 100%;
+        background: url(../../img/recent01.png) top/cover;
+      }
+
+      .mod-i-4 {
+        height: 100%;
+        background: url(../../img/recent01.png) top/cover;
+      }
+
+      .hsi-5 {
+        height: 100%;
+        background: url(../../img/recent02.png) top/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .mod-i-5 {
+        height: 100%;
+        background: url(../../img/recent02.png) top/cover;
+
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
 }
